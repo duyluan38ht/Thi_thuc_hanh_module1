@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr, x) {
+        for (let i = arr.length - 1; i >= 0; i--) {
+            if (x === arr[i]) {
+                arr.splice(i, 1)
+            }
+        }
+        return arr;
+    }
+    let arrNew = [2, 4, 5, 6, 8, 7, 9];
+    let x = parseInt(prompt("nhập vào số nguyên"))
+    let temp = tryRemoveFromArray(arrNew, x);
+    document.write(temp);
+</script>
+</body>
+</html>
